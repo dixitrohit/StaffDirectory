@@ -1,0 +1,160 @@
+﻿<form class="form-horizontal"  name="StaffAddEditForm" ng-controller="StaffEditController as vm">
+    <fieldset>
+        <legend>Add/Edit Staff Member</legend>
+        <div class="form-group" hidden>
+            <label class="col-md-2 control-label">Staff ID</label>
+
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="StaffID"
+                       name="StaffID"
+                       type="text"
+                       readonly
+                       ng-model="vm.staff.StaffID"
+                        />
+            </div>
+           
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error':StaffAddEditForm.FirstName.$invalid &&
+                                    StaffAddEditForm.FirstName.$dirty}">
+            <label class="col-md-2 control-label" for="FirstName">First Name</label>
+
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="FirstName"
+                       name="FirstName"
+                       type="text"
+                       placeholder="First Name (required)"
+                       ng-model="vm.staff.FirstName"
+                       required
+                       ng-minlength="3"
+                       ng-maxlength="15" />
+            </div>
+            <span class="help-block has-error">
+                <span ng-show="StaffAddEditForm.FirstName.$error.required">
+                    First name is required.
+                </span>
+                <span ng-show="StaffAddEditForm.FirstName.$error.minlength">
+                    First name must be at least 3 characters in length.
+                </span>
+                <span ng-show="StaffAddEditForm.FirstName.$error.maxlength">
+                    First name cannot exceed 15 characters in length.
+                </span>
+            </span>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error':StaffAddEditForm.LastName.$invalid &&
+                                    StaffAddEditForm.LastName.$dirty}">
+            <label class="col-md-2 control-label"
+                   for="LastName">Last Name</label>
+
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="LastName"
+                       name="LastName"
+                       type="text"
+                       placeholder="Last Name (required)"
+                       ng-model="vm.staff.LastName"
+                       required
+                       ng-minlength="3"
+                       ng-maxlength="15" />
+            </div>
+            <span class="help-block has-error">
+                <span ng-show="StaffAddEditForm.LastName.$error.required">
+                    Last name is required.
+                </span>
+                <span ng-show="StaffAddEditForm.LastName.$error.minlength">
+                    Last name must be at least 3 characters in length.
+                </span>
+                <span ng-show="StaffAddEditForm.LastName.$error.maxlength">
+                    Last name cannot exceed 15 characters in length.
+                </span>
+            </span>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error':StaffAddEditForm.Title.$invalid &&
+                                    StaffAddEditForm.Title.$dirty}">
+            <label class="col-md-2 control-label"
+                   for="Title">Title</label>
+
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="Title"
+                       name="Title"
+                       type="text"
+                       placeholder="Title (required)"
+                       ng-model="vm.staff.Title"
+                       required
+                       ng-minlength="4"
+                       ng-maxlength="50" />
+            </div>
+            <span class="help-block has-error">
+                <span ng-show="StaffAddEditForm.Title.$error.required">
+                    Title is required.
+                </span>
+                <span ng-show="StaffAddEditForm.Title.$error.minlength">
+                    Title must be at least 4 characters in length.
+                </span>
+                <span ng-show="StaffAddEditForm.Title.$error.maxlength">
+                    Title cannot exceed 50 characters in length.
+                </span>
+            </span>
+        </div>
+        <div class="form-group"
+             ng-class="{'has-error':StaffAddEditForm.Phone.$invalid &&
+                                    StaffAddEditForm.Phone.$dirty}">
+            <label class="col-md-2 control-label"
+                   for="Phone">Phone</label>
+
+            <div class="col-md-4">
+                <input class="form-control"
+                       id="Phone"
+                       name="Phone"
+                       type="text"
+                       placeholder="Phone (required)"
+                       ng-model="vm.staff.Phone"
+                       required
+                       ng-minlength="10"
+                       ng-maxlength="15" />
+            </div>
+            <span class="help-block has-error">
+                <span ng-show="StaffAddEditForm.Phone.$error.required">
+                    Phone number is required.
+                </span>
+                <span ng-show="StaffAddEditForm.Phone.$error.minlength">
+                    Phone number must be at least 10 characters in length.
+                </span>
+                <span ng-show="StaffAddEditForm.Phone.$error.maxlength">
+                    Phone number cannot exceed 15 characters in length.
+                </span>
+            </span>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4 col-md-offset-2">
+                <span>
+                    <button class="btn btn-primary"
+                            style="width:80px;margin-right:10px"
+                            ng-click="vm.submit()"
+                            ng-disabled="StaffAddEditForm.$invalid">
+                        Save
+                    </button>
+                </span>
+                <span>
+                    <button class="btn btn-default"
+                            style="width:70px"
+                            ng-click="vm.cancel(StaffAddEditForm)">
+                        Cancel
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <div class="form-group"
+             ng-show="vm.message">
+            <div class="col-md-6">
+                <pre style="font: inherit">{{vm.message }}</pre>
+            </div>
+        </div>
+    </fieldset>
+</form>

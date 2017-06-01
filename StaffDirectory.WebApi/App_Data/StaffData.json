@@ -1,0 +1,74 @@
+[
+  {
+    "StaffID": 1,
+    "FirstName": "Peter",
+    "LastName": "Gregory",
+    "Title": "Managing Director & Co-Founder",
+    "Phone": "0123456789",
+    "Photo": "http://localhost:61046/images/peter.jpg"
+  },
+  {
+    "StaffID": 2,
+    "FirstName": "Robert",
+    "LastName": "Foster",
+    "Title": "Technical Director & Co-Founder",
+    "Phone": "0123456780",
+    "Photo": "http://localhost:61046/images/robert.jpg"
+  },
+  {
+    "StaffID": 3,
+    "FirstName": "Regan",
+    "LastName": "Perry",
+    "Title": "Production Manager",
+    "Phone": "0123456781",
+    "Photo": "http://localhost:61046/images/regan.jpg"
+  },
+  {
+    "StaffID": 4,
+    "FirstName": "Mario ",
+    "LastName": "Lopez",
+    "Title": "Lead Developer",
+    "Phone": "0123456782",
+    "Photo": "http://localhost:61046/images/mario.jpg"
+  },
+  {
+    "StaffID": 5,
+    "FirstName": "Vojtěch  ",
+    "LastName": "Rujbr",
+    "Title": "iOS Developer",
+    "Phone": "0123456783",
+    "Photo": "http://localhost:61046/images/koben.jpg"
+  },
+  {
+    "StaffID": 6,
+    "FirstName": "Cherie",
+    "LastName": "Gregory",
+    "Title": "Training Co-ordinator",
+    "Phone": "0123456739",
+    "Photo": "http://localhost:61046/images/koben.jpg"
+  },
+  {
+    "StaffID": 7,
+    "FirstName": "Tristan",
+    "LastName": "Boyle",
+    "Title": "Intern (Geelong)",
+    "Phone": "0123456789",
+    "Photo": "http://localhost:61046/images/koben.jpg"
+  },
+  {
+    "StaffID": 8,
+    "FirstName": "Ella",
+    "LastName": "Foster",
+    "Title": "Finance & Administration",
+    "Phone": "0123452789",
+    "Photo": "http://localhost:61046/images/koben.jpg"
+  },
+  {
+    "StaffID": 9,
+    "FirstName": "Phil",
+    "LastName": "Scattergood",
+    "Title": "Support Officer",
+    "Phone": "0123456786",
+    "Photo": "http://localhost:61046/images/koben.jpg"
+  }
+]

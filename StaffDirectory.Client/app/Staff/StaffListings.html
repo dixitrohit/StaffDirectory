@@ -1,0 +1,29 @@
+﻿<div class="panel panel-primary"
+     ng-controller="StaffDirectoryController as vm">
+    <div class="panel-heading" style="font-size:large;">
+        Staff Directory
+    </div>
+    <div class="row">
+        <div class="col-sm-4" ng-repeat="staff in vm.StaffListing">
+            <table align="center">
+                <tr>
+                    <td align="center">
+                        <img src={{staff.Photo}} class="img-circle person" width="180" height="180">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="text-center"><strong>{{staff.FirstName}} {{ staff.LastName }}</strong></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <p class="text-center">{{staff.Title}}</p>
+                        <p>{{staff.Phone}}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
